@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-PETA | My Travelling Plan for the Future</title>
+</head>
+
+<!-- Step 2: Index contains 2 frames -->
+<!-- Top frame = Home (title + nav list), Bottom frame = the selected country page -->
+<frameset rows="230,*">
+  <frame src="home.html" name="topFrame" scrolling="no" noresize>
+  <frame src="country1.html" name="contentFrame">
+
+  <noframes>
+    <body>
+      <p>Your browser does not support frames. Please visit
+        <a href="home.html">home.html</a> directly.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>
