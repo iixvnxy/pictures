@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-PETA | My Travelling Plan for the Future</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    .frame-wrap {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+    .frame-wrap iframe {
+      border: none;
+      height: 100%;
+    }
+    #homeFrame { width: 25%; border-right: 3px solid #ffd166; }
+    #contentFrame { width: 75%; }
+  </style>
+</head>
+<body>
+
+  <!-- Step 2: Index contains 2 frames (built with <iframe> for reliable modern-browser support) -->
+  <!-- Left frame (25%) = Home, Right frame (75%) = selected country page -->
+  <div class="frame-wrap">
+    <iframe src="home.html" name="homeFrame" id="homeFrame" title="Home / navigation"></iframe>
+    <iframe src="country1.html" name="contentFrame" id="contentFrame" title="Country content"></iframe>
+  </div>
+
+</body>
+</html
